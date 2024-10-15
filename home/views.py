@@ -6,7 +6,7 @@ def render_home():
         try:
             msg = flask_mail.Message(
                 subject = 'Hello',
-                recipients=['daria.filinskaya2009@gmail.com'],
+                recipients=['boyarkina.ar@gmail.com'],
                 body='This is a test email sent from Flask-Mail!'
             )
             mail.send(msg)
