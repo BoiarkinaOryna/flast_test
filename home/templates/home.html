@@ -4,6 +4,27 @@
     Home
 {% endblock %}
 
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('home.static', filename = 'home.css') }}">
+{% endblock %}
+
 {% block content %}
-    <h1>This is the home page</h1>
+    <header class="header">
+
+    </header>
+    <main>
+        <img class = "background" src="{{ url_for('home.static', filename = 'images/background.jpg') }}" alt="">
+        <div class="sendEmail">
+            <h1 class="text">Напишіть, будь ласка, відгук</h1>
+            <form action="" method="post" class="review">
+                <input type="text" name="username" placeholder="Enter your usename">
+                <input type="text" name="email" placeholder="Enter your email">
+                <textarea name="message" id=""></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 {% endblock %}
